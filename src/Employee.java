@@ -1,11 +1,13 @@
 import java.util.Objects;
 
 public class Employee {
+
     public static int count=0; // Счетчик
     private String fullName;
     private int department;
     private float pay;
     private int id ;
+
 
     public Employee(String fullName, int department, int pay) {
         this.fullName = fullName;

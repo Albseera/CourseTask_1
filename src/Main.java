@@ -1,40 +1,46 @@
-import java.util.Arrays;
-
 public class Main {
 
 
     public static void main(String[] args) {
         System.out.println("Курсовая №1");
-        ListOfMethod.getListEmployee();
-        ListOfMethod.setSplitter();
-        ListOfMethod.getTotalMonthPay();
-        ListOfMethod.setSplitter();
-        ListOfMethod.getMaxMonthPay();
-        ListOfMethod.setSplitter();
-        ListOfMethod.getMinMonthPay();
-        ListOfMethod.setSplitter();
-        ListOfMethod.getMiddleMonthPay();
-        ListOfMethod.setSplitter();
-        ListOfMethod.getFullName();
-        ListOfMethod.setSplitter();
-        ListOfMethod.indexingPay(15);
-        ListOfMethod.setSplitter();
-        ListOfMethod.getDepartMaxMonthPay(3);
-        ListOfMethod.setSplitter();
-        ListOfMethod.getDepartMinMonthPay(5);
-        ListOfMethod.setSplitter();
-        ListOfMethod.getDepartTotalMonthPay(3);
-        ListOfMethod.setSplitter();
-        ListOfMethod.getDepartMiddleMonthPay(3);
-        ListOfMethod.setSplitter();
-        ListOfMethod.indexingDepartPay(3,15);
-        ListOfMethod.setSplitter();
-        ListOfMethod.getDepartInfo(3);
-        ListOfMethod.setSplitter();
-        ListOfMethod.getMinMonthPay(70000);
-        ListOfMethod.setSplitter();
-        ListOfMethod.getMaxMonthPay(70000);
-
+        EmployeeBook test= new EmployeeBook();
+        test.getListEmployee();
+        test.setSplitter();
+        test.getTotalMonthPay();
+        test.setSplitter();
+        test.getMaxMonthPay();
+        test.setSplitter();
+        test.getMinMonthPay();
+        test.setSplitter();
+        test.getMiddleMonthPay();
+        test.setSplitter();
+        test.getFullName();
+        test.setSplitter();
+        test.indexingPay(15);
+        test.setSplitter();
+        test.getDepartMaxMonthPay(3);
+        test.setSplitter();
+        test.getDepartMinMonthPay(5);
+        test.setSplitter();
+        test.getDepartTotalMonthPay(3);
+        test.setSplitter();
+        test.getDepartMiddleMonthPay(3);
+        test.setSplitter();
+        test.indexingDepartPay(3,15);
+        test.setSplitter();
+        test.getDepartInfo(3);
+        test.setSplitter();
+        test.getMinMonthPay(70000);
+        test.setSplitter();
+        test.getMaxMonthPay(70000);
+        test.removeEmployee("Сидоров Сидор Сидорович");
+        test.getListEmployee();//Проверим массив
+        test.createEmployee("Син Дзин Пин", 5, 1500450);
+        test.getListEmployee();//Проверим массив
+        test.editPayEmployee("Син Дзин Пин",250000);
+        test.editDepartEmployee("Син Дзин Пин",1);
+        test.getListEmployee(); //Проверим массив
+        test.getDepartFullName();
     }
 
 
